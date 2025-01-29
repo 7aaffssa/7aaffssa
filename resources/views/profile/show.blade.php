@@ -4,5 +4,5 @@
     {{$profile->id}}
     {{$profile->name}}
     {{$profile->email}}
-    {{$profile->bio}}
+    {{-- {{$profile->bio}} --}}
 </x-master>

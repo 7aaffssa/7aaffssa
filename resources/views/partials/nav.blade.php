@@ -12,8 +12,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link"  href="{{ route('profiles.index') }}">Tous Les Profiles</a>          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="/profile">Mon Profile</a>          </li>
+          {{-- <li class="nav-item">
+            <a class="nav-link"  href="/profile">Mon Profile</a>          </li> --}}
           <li class="nav-item">
             <a  class="nav-link"  href="{{ route('settings.index') }}">Mes informations</a>
         </li>

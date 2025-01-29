@@ -8,7 +8,7 @@ use App\Models\Profile;
 class ProfileController extends Controller
 {
     public function index(){
-        $profiles = Profile::paginate(10); 
+        $profiles = Profile::paginate(9); 
         return view('profile.index',compact('profiles'));
     }
     public function show(request $request){

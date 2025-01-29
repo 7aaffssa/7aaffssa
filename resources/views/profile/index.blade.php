@@ -1,6 +1,40 @@
+{{-- ! Afficher dans des cartes --}}
 <x-master title="Profiles"><h3>Profiles</h3>
+    <div class="row my-5">
+
+        @foreach($profiles as $profile )
+                <x-profile-card :profile="$profile" />
+        @endforeach
+    </div>
+    {{$profiles->links()}}
+</x-master>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- ! Afficher dans un tableau --}}
+{{-- <x-master title="Profiles"><h3>Profiles</h3> --}}
     {{-- <x-alert type="primary" ><strong>Bijouuuuuuuuuuuur</strong></x-alert> --}}
-    <table class="table">
+    {{-- <table class="table">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -19,4 +53,4 @@
         @endforeach
     </table>
     {{$profiles->links()}}
-</x-master>
+</x-master> --}}
