@@ -1,0 +1,1 @@
+<h1>ok <?php echo $nom ?> <?php echo $prenom ?> </h1>
