@@ -26,11 +26,6 @@
 
 
 
-
-
-
-
-
 {{-- ! Afficher dans un tableau --}}
 {{-- <x-master title="Profiles"><h3>Profiles</h3> --}}
     {{-- <x-alert type="primary" ><strong>Bijouuuuuuuuuuuur</strong></x-alert> --}}

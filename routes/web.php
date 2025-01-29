@@ -25,8 +25,14 @@ Route::get('/', function () {
 */
 
 route::get('/', [homecontroller::class, 'index'])->name('homepage');
+
 route::get('/profiles', [ProfileController::class, 'index'])->name('profiles.index');
+
 route::get('/profile/{id}', [ProfileController::class, 'show'])
 ->where('id', '\d+')
 ->name('profile.show');
+
+route::get('/profiles/create', [InformationsController::class, 'create'])
+->name('creaet');
+
 route::get('/settings', [InformationsController::class, 'index'])->name('settings.index');

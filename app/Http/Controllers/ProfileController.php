@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Profile;
 
+
+
+
 class ProfileController extends Controller
 {
     public function index(){
@@ -16,4 +19,10 @@ class ProfileController extends Controller
         $profile = Profile::findOrFail($id);
  
         return view('profile.show',compact('profile'));}
-}
+
+    public function create(){
+        return view('profile.create');
+        
+    }
+
+} 
